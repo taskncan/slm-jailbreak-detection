@@ -1,0 +1,40 @@
+name: thesis-ml
+channels:
+  - conda-forge
+  - nvidia
+  - pytorch
+dependencies:
+  - python=3.11
+  - numpy<2
+  - pandas>=2.3
+  - scipy
+  - scikit-learn>=1.4,<1.6
+  - sentence-transformers
+  - transformers
+  - datasets
+  - tokenizers
+  - sentencepiece
+  - rapidfuzz
+  - langdetect
+  - regex
+  - emoji
+  - pyperclip
+  - requests
+  - faiss-cpu
+  - tiktoken
+  - nltk
+  - accelerate
+  - joblib
+  - pytorch=2.4.*
+  - pytorch-cuda=12.4
+  - jupyterlab
+  - ipywidgets
+  - matplotlib
+  - seaborn
+  - tqdm
+  - psutil
+  - pip
+  - pip:
+      - xgboost>=2.0.0
+      - cupy-cuda12x
+      - optuna>=3.6

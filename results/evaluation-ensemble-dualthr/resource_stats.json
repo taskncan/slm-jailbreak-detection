@@ -1,0 +1,11 @@
+{
+  "total_inference_time_sec": 61.0622295322828,
+  "per_sample_avg_sec": 0.010737160107663584,
+  "single_prompt_latency_sec": 0.01972041092813015,
+  "batch_latency_sec": 0.34142687916755676,
+  "batch_size": 32,
+  "ram_start_mb": 1632.468992,
+  "ram_end_mb": 1632.862208,
+  "ram_delta_mb": 0.3932159999999385,
+  "cpu_usage_percent": 119.0
+}

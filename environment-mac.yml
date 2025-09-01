@@ -1,0 +1,47 @@
+name: thesis-ml
+channels:
+  - conda-forge        # broad science/ML stack
+  - pytorch            # Apple-Silicon wheels for torch 2.x
+dependencies:
+  # ── core runtime ───────────────────────────────────────
+  - python =3.11
+  - numpy  <2          # 1.26.x today – keeps PyTorch & SciPy happy
+  - pandas >=2.3
+  - scipy
+  - scikit-learn >=1.7
+  - lightgbm >=4.6     # CPU build – fast enough on M-series
+  - pytorch =2.2.*
+  - torchvision =0.17.*
+  - torchaudio =2.2.*
+  - sentence-transformers
+  - transformers
+  - datasets
+  - tokenizers
+  - sentencepiece
+  - rapidfuzz
+  - langdetect
+  - regex
+  - emoji
+  - pyperclip
+  - requests
+  - faiss-cpu
+  - tiktoken
+  - nltk
+  - spacy-en_core_web_sm
+  - xgboost
+  - accelerate
+
+  # ── viz / notebooks ───────────────────────────────────
+  - jupyterlab
+  - ipywidgets
+  - matplotlib
+  - seaborn
+  - tqdm
+
+  # ── misc utils ────────────────────────────────────────
+  - psutil
+  - pip            
+
+  # ── explicit pin so future `conda update --all` won’t drag NumPy 2 back in ──
+  - pip:
+      - "numpy<2"      # duplicate pin for pip-installed wheels (just in case)
